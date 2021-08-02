@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Form
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/formstyle.css">
+</head>
+
+<body>
+    <div class="form-outline">
+        <div class="head">
+            <h1>Application Form</h1>
+            <h2>Note: The Form should be filled within 21 days.</h2>
+        </div>
+        <form action=" ">
+            <div class="personal">
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname">
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email">
+            <br>
+            <label for="contact">Contact Number: </label>
+            <input type="tel" id="contact" name="contact">
+            <br>
+            <h3>Gender</h3>
+            <input type="radio" id="male" name="male" value="Male"><label for="male" style="text-align: left;">Male</label><br>
+            <input type="radio" id="female" name="female" value="Female"><label for="female" style="text-align: left;">Female</label><br>
+            <input type="radio" id="other" name="other" value="Other"><label for="other"  style="text-align: left;">Others</label><br>
+            <label for="birthday">Date of Birth</label>
+            <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="background">
+                <label for="education">Education Level</label>
+                <select name="education" id="eduaction">
+                <option value="Graduation">Graduation</option>
+                <option value="Post-Graduation">Post-Graduation</option>
+                <option value="Under-Graduation">Under-Graduation</option>
+                <option value="High-School">High School</option>
+                <option value="Junior college">Junior College</option>
+                </select>
+                <br>
+                <label for="employment">Employment Status:</label>
+                <select>
+                    <option value="Employed">Employed</option>
+                    <option value="Intern">Intern</option>
+                    <option value="Unemployed">Unemployed</option>
+                </select>
+            </div>
+            <div class="note">
+                <fieldset>
+                    <legend>
+                        Essay Section
+                    </legend>
+                    <label for="msg"></label>
+                    <p>Tell us about Yourself</p>
+                    <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Write about you....."></textarea>
+                </fieldset>
+            </div>
+            <div id="submit-button">
+                <button type="submit" id="submit">Submit Application</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>
